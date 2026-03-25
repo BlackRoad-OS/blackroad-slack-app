@@ -1,54 +1,48 @@
-# BlackRoad Slack App
+<!-- BlackRoad SEO Enhanced -->
 
-Official Slack integration for BlackRoad OS - manage AI agents, deployments, and infrastructure from Slack.
+# ulackroad slack app
 
-## Features
+> Part of **[BlackRoad OS](https://blackroad.io)** — Sovereign Computing for Everyone
 
-### Slash Commands
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad-OS-ff1d6c?style=for-the-badge)](https://blackroad.io)
+[![BlackRoad OS](https://img.shields.io/badge/Org-BlackRoad-OS-2979ff?style=for-the-badge)](https://github.com/BlackRoad-OS)
+[![License](https://img.shields.io/badge/License-Proprietary-f5a623?style=for-the-badge)](LICENSE)
 
-| Command | Description |
-|---------|-------------|
-| `/blackroad status` | Show infrastructure status (orgs, repos, agents) |
-| `/blackroad agents` | List AI agents with status and task counts |
-| `/blackroad usage` | View usage statistics (API calls, compute, storage) |
-| `/blackroad deploy <service>` | Trigger a deployment |
-| `/blackroad help` | Show available commands |
+**ulackroad slack app** is part of the **BlackRoad OS** ecosystem — a sovereign, distributed operating system built on edge computing, local AI, and mesh networking by **BlackRoad OS, Inc.**
 
-### Interactive Messages
+## About BlackRoad OS
 
-- Rich status cards with real-time data
-- Agent management with quick actions
-- Deployment notifications with progress tracking
-- Usage alerts and billing notifications
+BlackRoad OS is a sovereign computing platform that runs AI locally on your own hardware. No cloud dependencies. No API keys. No surveillance. Built by [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc), a Delaware C-Corp founded in 2025.
 
-## Installation
+### Key Features
+- **Local AI** — Run LLMs on Raspberry Pi, Hailo-8, and commodity hardware
+- **Mesh Networking** — WireGuard VPN, NATS pub/sub, peer-to-peer communication
+- **Edge Computing** — 52 TOPS of AI acceleration across a Pi fleet
+- **Self-Hosted Everything** — Git, DNS, storage, CI/CD, chat — all sovereign
+- **Zero Cloud Dependencies** — Your data stays on your hardware
 
-### Add to Slack
+### The BlackRoad Ecosystem
+| Organization | Focus |
+|---|---|
+| [BlackRoad OS](https://github.com/BlackRoad-OS) | Core platform and applications |
+| [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc) | Corporate and enterprise |
+| [BlackRoad AI](https://github.com/BlackRoad-AI) | Artificial intelligence and ML |
+| [BlackRoad Hardware](https://github.com/BlackRoad-Hardware) | Edge hardware and IoT |
+| [BlackRoad Security](https://github.com/BlackRoad-Security) | Cybersecurity and auditing |
+| [BlackRoad Quantum](https://github.com/BlackRoad-Quantum) | Quantum computing research |
+| [BlackRoad Agents](https://github.com/BlackRoad-Agents) | Autonomous AI agents |
+| [BlackRoad Network](https://github.com/BlackRoad-Network) | Mesh and distributed networking |
+| [BlackRoad Education](https://github.com/BlackRoad-Education) | Learning and tutoring platforms |
+| [BlackRoad Labs](https://github.com/BlackRoad-Labs) | Research and experiments |
+| [BlackRoad Cloud](https://github.com/BlackRoad-Cloud) | Self-hosted cloud infrastructure |
+| [BlackRoad Forge](https://github.com/BlackRoad-Forge) | Developer tools and utilities |
 
-1. Go to [BlackRoad Slack App](https://blackroad.io/integrations/slack)
-2. Click "Add to Slack"
-3. Authorize the app for your workspace
+### Links
+- **Website**: [blackroad.io](https://blackroad.io)
+- **Documentation**: [docs.blackroad.io](https://docs.blackroad.io)
+- **Chat**: [chat.blackroad.io](https://chat.blackroad.io)
+- **Search**: [search.blackroad.io](https://search.blackroad.io)
 
-### Manual Setup (Self-hosted)
+---
 
-```bash
-# Set secrets
-wrangler secret put SLACK_SIGNING_SECRET
-wrangler secret put SLACK_BOT_TOKEN
 
-# Deploy
-npm run deploy
-```
-
-## Endpoints
-
-| Endpoint | Purpose |
-|----------|---------|
-| `/health` | Health check |
-| `/slack/commands` | Slash command handler |
-| `/slack/interactions` | Interactive component handler |
-| `/slack/events` | Event subscription handler |
-
-## License
-
-MIT © BlackRoad OS, Inc.
